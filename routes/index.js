@@ -1,5 +1,6 @@
 const routers = require("express").Router();
+const articleController = require("../controllers/articleController");
 
-routers.get("/api/login");
+routers.post("/api/article", articleController.article);
 
 module.exports = routers;
